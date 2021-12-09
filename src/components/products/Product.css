@@ -9,4 +9,15 @@
     margin: 1em;
     padding: 1em;
     border: 1px dashed salmon;
+    text-align: left;
 }
+
+.main h2 {
+    color: rgb(204, 10, 130);
+    text-align: center;
+  }
+  
+.main h3 {
+    color: rgb(153, 28, 105);
+    text-align: left;
+  }

@@ -18,21 +18,23 @@ export const ProductList = () => {
 
   return (
     <>
-      <h2>Products</h2>
-      <button onClick={() => {navigate("create")}}>
-          New Product
-      </button>
-      <div className="products">
-          {console.log("ProductList: Render", products, productType)}
-          {products.map(product => {
-            const kandyType = productType.find(productType => productType.id === product.typeId)
-            return <ProductCard 
-                        key={product.id}
-                        product={product}
-                        productType={kandyType}
-                    />
-            })
-          }
+      <div className="main">
+        <h2>Products</h2>
+        {/* <button onClick={() => {navigate("create")}}>
+            New Product
+        </button> */}
+        <div className="products">
+            {console.log("ProductList: Render", products, productType)}
+            {products.map(product => {
+              const kandyType = productType.find(productType => productType.id === product.typeId)
+              return <ProductCard 
+                          key={product.id}
+                          product={product}
+                          productType={kandyType}
+                      />
+              })
+            }
+        </div>
       </div>
     </>
   )

@@ -41,3 +41,18 @@ address {
   margin: 0 0 0.1em;
   font-style: normal;
 }
+
+.main {
+  margin: 10px;
+  /* text-align: center; */
+}
+
+.main h1 {
+  color: rgb(204, 10, 130);
+  text-align: center;
+}
+
+.main h3 {
+  color: rgb(153, 28, 105);
+  text-align: center;
+}

@@ -85,12 +85,12 @@ export const EmployeeForm = () => {
           <fieldset>
               <div className="form-group">
                   <p><label htmlFor="manager">Manager: </label>
-                  <input name="manager" type="radio" id="managerYes" onClick={handleToggleManager} className="form-control" value={employee.manager}/> Yes <input name="manager" type="radio" id="managerNo" onClick={handleToggleManager} className="form-control" value={employee.manager}/> No</p>
+                  <input name="manager" type="radio" id="managerYes" onClick={handleToggleManager} className="radio" value={employee.manager}/> Yes <input name="manager" type="radio" id="managerNo" onClick={handleToggleManager} className="radio" value={employee.manager}/> No</p>
 
                   <p><label htmlFor="hourlyRate">Hourly Rate: </label>$ <input  type="number" id="hourlyRate" onChange={handleControlledInputChange} required className="form-control" min="0" max="100" value={employee.hourlyRate}/></p>
 
                   <p><label htmlFor="fullTime">Employment Type: </label>
-                  <input name="fullTime" type="radio" id="fullTimeYes" onClick={handleToggleHours} className="form-control" value={employee.fullTime}/> Full-time <input name="fullTime" type="radio" id="No" onClick={handleToggleHours} className="form-control" value={employee.fullTime}/> Part-time</p>
+                  <input name="fullTime" type="radio" id="fullTimeYes" onClick={handleToggleHours} className="radio" value={employee.fullTime}/> Full-time <input name="fullTime" type="radio" id="No" onClick={handleToggleHours} className="radio" value={employee.fullTime}/> Part-time</p>
               </div>
           </fieldset>
           <button className="btn btn-primary"
