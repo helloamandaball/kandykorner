@@ -9,6 +9,7 @@ import { ProductList } from "./products/ProductList"
 import { EmployeeProvider } from "./employees/EmployeeProvider"
 import { EmployeeList } from "./employees/EmployeeList"
 import { EmployeeForm } from "./employees/EmployeeForm"
+// import { OrderProvider } from "./orders/OrderProvider"
 
 export const ApplicationViews = () => {
     return (
@@ -16,13 +17,16 @@ export const ApplicationViews = () => {
         <ProductTypeProvider>
         <ProductProvider>
         <EmployeeProvider>
+        {/* <OrderProvider> */}
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="locations/*" element={<LocationList />} />
                 <Route path="products/*" element={<ProductList />} />
                 <Route path="employees/*" element={<EmployeeList />} />
                 <Route path="employees/create/*" element={<EmployeeForm />} />
+                {/* <Route path="orders/*" element={<OrderList />} /> */}
             </Routes>
+        {/* </OrderProvider> */}
         </EmployeeProvider>
         </ProductProvider>
         </ProductTypeProvider>

@@ -9,10 +9,12 @@ export const ProductCard = ({ product, productType }) => (
         <button onClick={() => ({
                 // Button captures the productId and customerId and adds it to the orders array in the database.
                 productId: product.id, 
-                customerId: parseInt(product.customerId)
+                customerId: parseInt(localStorage.getItem("kandy_customer"))
+                //Get customerId from local storage 
+                //ex from nutshell: userId: +sessionStorage.getItem("activeUser")
             })
         }>
-            Purchase
+            Add Item
         </button>
     </section>
 )
